@@ -1,3 +1,4 @@
+import React from 'react'
 import { AppSidebar } from "@/components/app-sidebar";
 import {
   Breadcrumb,
@@ -14,13 +15,11 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
-import ProfilePage from "../../Component/PageComponent/Profile/ProfilePage";
-import Header from "../../Component/CommonComponent/Header";
-
-export default function AddColor() {
+import Header from '../../Component/CommonComponent/Header';
+export default function ProductDetails() {
   return (
-  <>
-    <SidebarProvider>
+    <>
+         <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
         <header className=" sticky top-0 bg-white flex border-b-2 py-9 h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
@@ -38,7 +37,7 @@ export default function AddColor() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
-                <BreadcrumbPage>Add Color</BreadcrumbPage>
+                <BreadcrumbPage>Product Details</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -47,8 +46,6 @@ export default function AddColor() {
      
       </SidebarInset>
     </SidebarProvider>
-  
-  
-  </>
-  );
+    </>
+  )
 }

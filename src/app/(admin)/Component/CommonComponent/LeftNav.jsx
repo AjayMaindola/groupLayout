@@ -33,36 +33,35 @@ export default function LeftNav() {
           <h2>Profile</h2>
         </div>
       </Link>
-     <Link href="/dashboard/profile">
-     <div className="mt-3 px-5 text-[18px]">
-        <h2 className="text-gray-400 uppercase text-[12px] font-bold">
-          ecommerce components
-        </h2>
-      </div>
-     </Link>
+      <Link href="/dashboard/profile">
+        <div className="mt-3 px-5 text-[18px]">
+          <h2 className="text-gray-400 uppercase text-[12px] font-bold">
+            ecommerce components
+          </h2>
+        </div>
+      </Link>
       <div className="px-[20px]">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>
               <div className="text-[16px] flex items-center gap-3">
-                <FaDroplet />
+                <FaDroplet className="text-[22px]" />
                 <h2 className=" ">Color</h2>
               </div>
             </AccordionTrigger>
             <AccordionContent>
               <Link href="/dashboard/addcolor">
-              <div className=" flex items-center gap-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className=" text-[14px] cursor-pointer">Add Color</h2>
-              </div>
+                <div className=" flex items-center gap-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className=" text-[14px] cursor-pointer">Add Color</h2>
+                </div>
               </Link>
-            <Link href="/dashboard/viewcolor">
-            <div className=" flex items-center gap-3 mt-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className="text-[14px] cursor-pointer ">View Color</h2>
-              </div>
-            </Link>
-             
+              <Link href="/dashboard/viewcolor">
+                <div className=" flex items-center gap-3 mt-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className="text-[14px] cursor-pointer ">View Color</h2>
+                </div>
+              </Link>
             </AccordionContent>
           </AccordionItem>
 
@@ -70,19 +69,23 @@ export default function LeftNav() {
           <AccordionItem value="item-2">
             <AccordionTrigger>
               <div className="text-[16px] flex items-center gap-3">
-                <FaExpandArrowsAlt />
+                <FaExpandArrowsAlt className="text-[22px]" />
                 <h2 className=" ">Size</h2>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className=" text-[14px] cursor-pointer">Size Details</h2>
-              </div>
-              <div className=" flex items-center gap-3 mt-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className="text-[14px] cursor-pointer ">View Size</h2>
-              </div>
+              <Link href="/dashboard/sizedetails">
+                <div className=" flex items-center gap-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className=" text-[14px] cursor-pointer"> View Size </h2>
+                </div>
+              </Link>
+              <Link href="/dashboard/viewsize">
+                <div className=" flex items-center gap-3 mt-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className="text-[14px] cursor-pointer ">View Size</h2>
+                </div>
+              </Link>
             </AccordionContent>
           </AccordionItem>
           {/* Third acordion Item */}
@@ -90,19 +93,23 @@ export default function LeftNav() {
           <AccordionItem value="item-3">
             <AccordionTrigger>
               <div className="text-[16px] flex items-center gap-3">
-                <RiMenu3Fill />
+                <RiMenu3Fill className="text-[22px]" />
                 <h2 className=" ">Parent Category</h2>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className=" text-[14px] cursor-pointer">Add Category</h2>
-              </div>
-              <div className=" flex items-center gap-3 mt-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className="text-[14px] cursor-pointer ">View Category</h2>
-              </div>
+              <Link href="/dashboard/addcategory">
+                <div className=" flex items-center gap-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className=" text-[14px] cursor-pointer">Add Category</h2>
+                </div>
+              </Link>
+              <Link href="/dashboard/viewcategory">
+                <div className=" flex items-center gap-3 mt-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className="text-[14px] cursor-pointer ">View Category</h2>
+                </div>
+              </Link>
             </AccordionContent>
           </AccordionItem>
 
@@ -115,18 +122,22 @@ export default function LeftNav() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className=" text-[14px] cursor-pointer">
-                  Add Sub Category
-                </h2>
-              </div>
-              <div className=" flex items-center gap-3 mt-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className="text-[14px] cursor-pointer ">
-                  View Sub Category
-                </h2>
-              </div>
+              <Link href="/dashboard/add-subcategory">
+                <div className=" flex items-center gap-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className=" text-[14px] cursor-pointer">
+                    Add Sub Category
+                  </h2>
+                </div>
+              </Link>
+              <Link href="/dashboard/view-subcategory">
+                <div className=" flex items-center gap-3 mt-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className="text-[14px] cursor-pointer ">
+                    View Sub Category
+                  </h2>
+                </div>
+              </Link>
             </AccordionContent>
           </AccordionItem>
           {/* Fifth Accordion */}
@@ -138,14 +149,20 @@ export default function LeftNav() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className=" text-[14px] cursor-pointer">Product Details</h2>
-              </div>
-              <div className=" flex items-center gap-3 mt-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className="text-[14px] cursor-pointer ">Product Items</h2>
-              </div>
+              <Link href="/dashboard/product-details">
+                <div className=" flex items-center gap-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className=" text-[14px] cursor-pointer">
+                    Product Details
+                  </h2>
+                </div>
+              </Link>
+              <Link href="/dashboard/product-items">
+                <div className=" flex items-center gap-3 mt-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className="text-[14px] cursor-pointer ">Product Items</h2>
+                </div>
+              </Link>
             </AccordionContent>
           </AccordionItem>
           {/* Sixth Accordion */}
@@ -157,14 +174,18 @@ export default function LeftNav() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3">
-                <BiRadioCircleMarked className="text-[20px]" />
-                <h2 className=" text-[14px] cursor-pointer">Story Details</h2>
-              </div>
-              <div className=" flex items-center gap-3 mt-3">
+              <Link href="/dashboard/story-details">
+                <div className=" flex items-center gap-3">
+                  <BiRadioCircleMarked className="text-[20px]" />
+                  <h2 className=" text-[14px] cursor-pointer">Story Details</h2>
+                </div>
+              </Link>
+             <Link href="/dashboard/story-view">
+             <div className=" flex items-center gap-3 mt-3">
                 <BiRadioCircleMarked className="text-[20px]" />
                 <h2 className="text-[14px] cursor-pointer ">Story View</h2>
               </div>
+             </Link>
             </AccordionContent>
           </AccordionItem>
           {/* 7th Accordion */}
@@ -176,10 +197,12 @@ export default function LeftNav() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3 mt-1">
+             <Link href="/dashboard/order">
+             <div className=" flex items-center gap-3 mt-1">
                 <BiRadioCircleMarked className="text-[20px]" />
                 <h2 className="text-[14px] cursor-pointer ">Orders</h2>
               </div>
+             </Link>
             </AccordionContent>
           </AccordionItem>
           {/* 8th Accordion */}
@@ -191,23 +214,29 @@ export default function LeftNav() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className=" flex items-center gap-3">
+           <Link href="/dashboard/slider-details">
+           <div className=" flex items-center gap-3">
                 <BiRadioCircleMarked className="text-[20px]" />
                 <h2 className=" text-[14px] cursor-pointer">Slider Details</h2>
               </div>
-              <div className=" flex items-center gap-3 mt-3">
+           </Link>
+            <Link href="/dashboard/slider-view">
+            <div className=" flex items-center gap-3 mt-3">
                 <BiRadioCircleMarked className="text-[20px]" />
                 <h2 className="text-[14px] cursor-pointer ">Slider View</h2>
               </div>
+            </Link>
             </AccordionContent>
           </AccordionItem>
           {/* 9th Accordion */}
           <AccordionItem value="item-9">
             <AccordionTrigger>
-              <div className="text-[16px] flex items-center gap-3">
+           <Link href="/dashboard/terms-and-condition">
+           <div className="text-[16px] flex items-center gap-3">
                 <FaFileAlt className="text-[22px]" />
                 <h2 className=" ">Terms & Conditions</h2>
               </div>
+           </Link>
             </AccordionTrigger>
             <AccordionContent></AccordionContent>
           </AccordionItem>

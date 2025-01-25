@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <p className=" font-montserrat text-3xl">  Testing 2</p>
         <p className="text-3xl font-Smooch"> Testing 1</p> <br/>
         <p className="text-3xl font-Garamond"> Testing 1</p> <br/>
-        <Button size="sm" variant="destructive">hello i am</Button>
+       <Link href="/dashboard/auth">
+       <Button size="sm" variant="destructive">login</Button>
+       </Link>
       </div>
 
 

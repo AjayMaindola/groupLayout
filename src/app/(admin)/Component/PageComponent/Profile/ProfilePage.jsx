@@ -6,6 +6,8 @@ import { IoLogoInstagram } from "react-icons/io";
 import { RiTwitterXLine } from "react-icons/ri";
 import Image from 'next/image'
 import imgbird from"@/app/assets/images/bird-colorful-1avif.avif"
+import vortex from"@/app/assets/images/vortex.avif"
+import imgprofile from"@/app/assets/images/pexelshero.jpeg"   
 export default function ProfilePage() {
   return (
     <>
@@ -62,10 +64,10 @@ export default function ProfilePage() {
                 <Image
                
                   className="w-[90px] border rounded-xl mt-5"
-                  src={imgbird.src}
+                  src={imgbird .src}
                   width={80}
                   height={50}
-                  alt=""
+                  alt="imglogo1"
                 />
               </div>
               <div>
@@ -73,10 +75,10 @@ export default function ProfilePage() {
                 <Image
                
                   className="w-[90px] border rounded-xl mt-5"
-                  src={imgbird.src}
+                  src={vortex .src}
                   width={80}
                   height={50}
-                  alt=""
+                  alt="imglogo2"
                 />
               </div>
               <div>
@@ -89,7 +91,23 @@ export default function ProfilePage() {
                 </div>
               </div>
             </div>
+            <div className="flex items-center justify-center ">
+             <Image
+             className=" rounded-full"
+             width={100}
+             height={100}
+             src={imgprofile}
+             alt="imgprofile"
+             
+             
+             
+             
+             
+             />
+            </div>
           </div>
+        
+
         </div>
       </div>
     </>
