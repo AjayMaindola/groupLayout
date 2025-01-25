@@ -23,20 +23,20 @@ export default function LeftNav() {
     <>
       <Link href={"/dashboard"}>
         <div className="mt-2 px-5 flex items-center gap-3 text-[18px] cursor-pointer">
-          <RiPieChart2Fill />
-          <h2>Dashboard</h2>
+          <RiPieChart2Fill className="text-[22px]" />
+          <h2 className="text-[18px]">Dashboard</h2>
         </div>
       </Link>
       <Link href={"/dashboard/profile"}>
         <div className="mt-1 px-5 flex items-center gap-3 text-[18px] cursor-pointer">
-          <LuSettings />
-          <h2>Profile</h2>
+          <LuSettings className="text-[22px]" />
+          <h2 className="text-[18px]">Profile</h2>
         </div>
       </Link>
       <Link href="/dashboard/profile">
-        <div className="mt-3 px-5 text-[18px]">
+        <div className="mt-3 px-12 text-[18px]">
           <h2 className="text-gray-400 uppercase text-[12px] font-bold">
-            ecommerce components
+            ecommerce 
           </h2>
         </div>
       </Link>

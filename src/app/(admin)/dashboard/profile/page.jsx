@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import ProfilePage from "../../Component/PageComponent/Profile/ProfilePage";
 import Header from "../../Component/CommonComponent/Header";
+import Footer from "../../Component/CommonComponent/Footer";
 
 export default function Profile() {
   return (
@@ -43,6 +44,7 @@ export default function Profile() {
           </Breadcrumb>
         </div>
       <ProfilePage/>
+      <Footer/>
       </SidebarInset>
     </SidebarProvider>
   );

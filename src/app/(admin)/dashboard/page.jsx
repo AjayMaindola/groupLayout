@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Header from "../Component/CommonComponent/Header";
+import Footer from "../Component/CommonComponent/Footer";
 
 export default function Page() {
   return (
@@ -41,7 +42,7 @@ export default function Page() {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-        <div className="grid grid-cols-4 py-8  px-4 gap-2 items-center justify-between ">
+        <div className="grid grid-cols-4 py-8  px-4 gap-2 items-center justify-between pb-[310px] ">
           <div className="bg-[#5856d3] px-[15px] pt-[20px] pb-[70px]  rounded-[5px]">
             <span className="flex items-center justify-between">
               <h1 className="text-white text-[22px] font-bold">
@@ -109,6 +110,7 @@ export default function Page() {
             <h3 className="text-[20px] text-white">Orders</h3>
           </div>
         </div>
+        <Footer/>
       </SidebarInset>
     </SidebarProvider>
   );

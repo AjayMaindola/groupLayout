@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/sidebar";
 import Header from '../../Component/CommonComponent/Header';
 import Link from 'next/link';
+import ViewColorPage from '../../Component/PageComponent/ViewColorPage/ViewColorPage';
 
 export default function ViewColor
 () {
@@ -45,7 +46,7 @@ export default function ViewColor
           </Breadcrumb>
         </div>
         {/* page commponent add heare */}
-     
+     <ViewColorPage/>
       </SidebarInset>
     </SidebarProvider>
     </>
