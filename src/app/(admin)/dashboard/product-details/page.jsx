@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Header from '../../Component/CommonComponent/Header';
+import ProductAddsDetails from '../../Component/PageComponent/ProductAddDetails/ProductAddsDetails';
+import Footer from '../../Component/CommonComponent/Footer';
 export default function ProductDetails() {
   return (
     <>
@@ -37,13 +39,18 @@ export default function ProductDetails() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
+                <BreadcrumbPage>Product</BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
+              <BreadcrumbItem>
                 <BreadcrumbPage>Product Details</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
         {/* page commponent add heare */}
-     
+     <ProductAddsDetails/>
+     <Footer/>
       </SidebarInset>
     </SidebarProvider>
     </>
