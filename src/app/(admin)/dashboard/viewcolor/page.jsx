@@ -17,6 +17,7 @@ import {
 import Header from '../../Component/CommonComponent/Header';
 import Link from 'next/link';
 import ViewColorPage from '../../Component/PageComponent/ViewColorPage/ViewColorPage';
+import Footer from '../../Component/CommonComponent/Footer';
 
 export default function ViewColor
 () {
@@ -40,6 +41,10 @@ export default function ViewColor
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
+                <BreadcrumbPage>Color</BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
+              <BreadcrumbItem>
                 <BreadcrumbPage>View Color</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -47,6 +52,10 @@ export default function ViewColor
         </div>
         {/* page commponent add heare */}
      <ViewColorPage/>
+     <div className='mt-[195px]'>
+     <Footer/>
+     </div>
+    
       </SidebarInset>
     </SidebarProvider>
     </>

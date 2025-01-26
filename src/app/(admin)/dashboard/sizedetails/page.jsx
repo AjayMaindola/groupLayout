@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Header from '../../Component/CommonComponent/Header';
+import SizeDetailPage from '../../Component/PageComponent/SizeDetailPage/SizeDetailPage';
+import Footer from '../../Component/CommonComponent/Footer';
 export default function SizeDetails() {
   return (
     <>
@@ -37,13 +39,20 @@ export default function SizeDetails() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
+                <BreadcrumbPage>Size</BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
+              <BreadcrumbItem>
                 <BreadcrumbPage>Size Details</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
         {/* page commponent add heare */}
-     
+     <SizeDetailPage/>
+     <div>
+      <Footer/>
+     </div>
       </SidebarInset>
     </SidebarProvider>
     </>

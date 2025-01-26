@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Header from '../../Component/CommonComponent/Header';
+import AddCategoryPage from '../../Component/PageComponent/AddCategory/AddCategory';
+import Footer from '../../Component/CommonComponent/Footer';
 export default function AddCategory() {
   return (
     <>
@@ -37,13 +39,18 @@ export default function AddCategory() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
+                <BreadcrumbPage>Category</BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
+              <BreadcrumbItem>
                 <BreadcrumbPage>Add Category</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
         {/* page commponent add heare */}
-     
+     <AddCategoryPage/>
+     <Footer/>
       </SidebarInset>
     </SidebarProvider>
     </>

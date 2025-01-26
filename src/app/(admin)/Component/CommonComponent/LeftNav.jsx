@@ -77,7 +77,7 @@ export default function LeftNav() {
               <Link href="/dashboard/sizedetails">
                 <div className=" flex items-center gap-3">
                   <BiRadioCircleMarked className="text-[20px]" />
-                  <h2 className=" text-[14px] cursor-pointer"> View Size </h2>
+                  <h2 className=" text-[14px] cursor-pointer"> Size Details </h2>
                 </div>
               </Link>
               <Link href="/dashboard/viewsize">

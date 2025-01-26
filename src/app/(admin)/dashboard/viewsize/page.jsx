@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Header from '../../Component/CommonComponent/Header';
+import ViewSizePage from '../../Component/PageComponent/ViewSizePage/ViewSizePage';
+import Footer from '../../Component/CommonComponent/Footer';
 export default function ViewSize() {
   return (
     <>
@@ -37,13 +39,21 @@ export default function ViewSize() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
+                <BreadcrumbPage>Size</BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
+              <BreadcrumbItem>
                 <BreadcrumbPage>View Size</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
         {/* page commponent add heare */}
-     
+     <ViewSizePage/>
+     <div className='mt-[220px]'>
+     <Footer/>
+     </div>
+    
       </SidebarInset>
     </SidebarProvider> 
     </>
