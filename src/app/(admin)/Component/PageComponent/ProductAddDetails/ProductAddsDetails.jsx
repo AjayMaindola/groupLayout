@@ -102,7 +102,7 @@ export default function ProductAddsDetails() {
               id="countries"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option value="Men">--Select Parent Category--</option>
+              <option>--Select Parent Category--</option>
               <option value="Men">Men'S</option>
               <option value="Women">Women's</option>
               <option value="Sale">Sale</option>
@@ -114,7 +114,7 @@ export default function ProductAddsDetails() {
               id="countries"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option value="TShirt">--Select Sub Category--</option>
+              <option >--Select Sub Category--</option>
               <option value="TShirt">T-Shirt</option>
               <option value="Shirt">Shirt</option>
             </select>
@@ -125,7 +125,7 @@ export default function ProductAddsDetails() {
                   id="countries"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
-                  <option value="S">--Select Size--</option>
+                  <option>--Select Size--</option>
                   <option value="S">S</option>
                   <option value="M">M</option>
                   <option value="L">L</option>
@@ -139,7 +139,7 @@ export default function ProductAddsDetails() {
                   id="countries"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
-                  <option value="Black">--Select Color--</option>
+                  <option >--Select Color--</option>
                   <option value="Black">Black</option>
                   <option value="Red">Red</option>
                   <option value="Green">Green</option>

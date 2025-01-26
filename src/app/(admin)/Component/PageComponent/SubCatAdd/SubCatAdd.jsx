@@ -31,10 +31,11 @@ export default function SubCatAdd() {
                 id="countries"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               >
-                <option selected>--Sellect Category--</option>
-                <option value="CA">Men's</option>
-                <option value="FR">Women's</option>
-                <option value="DE">Sale</option>
+                {/* <option selected>--Sellect Category--</option> */}
+                <option >--Sellect Category--</option>
+                <option value="Men">Men's</option>
+                <option value="Women">Women's</option>
+                <option value="Sale">Sale</option>
               </select>
             <h1 className="pb-[10px] font-semibold mt-4">Category Image </h1>
             <div className="grid grid-cols-[70%_auto] items-center">
