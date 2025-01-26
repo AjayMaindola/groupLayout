@@ -30,14 +30,14 @@ export default function ProductAddsDetails() {
             <textarea
               id="message"
               rows="2"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Add Product Discriptio..."
             ></textarea>
             <h1 className="pb-[20px] mt-4 font-semibold">Short Description</h1>
             <textarea
               id="message"
               rows="2"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Add Product Discriptio..."
             ></textarea>
             <h1 className="pb-[20px] mt-4 font-semibold">Product Image</h1>
@@ -53,18 +53,6 @@ export default function ProductAddsDetails() {
                 <Image className=" " src={imgload} alt="uploadimg" />
               </div>
             </div>
-            {/* <h1 className="pb-[20px] mt-4 font-semibold">
-              Parent Category Name
-            </h1>
-            <select
-              id="countries"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            >
-              <option selected>--Sellect Category--</option>
-              <option value="CA">Men's</option>
-              <option value="FR">Women's</option>
-              <option value="DE">Sale</option>
-            </select> */}
             <h1 className="pb-[10px] font-semibold mt-4">Image Animation </h1>
             <div className="grid grid-cols-[70%_auto] items-center">
               <Input
@@ -112,48 +100,50 @@ export default function ProductAddsDetails() {
             <h1 className="pb-[20px] font-semibold ">Select Parent Category</h1>
             <select
               id="countries"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option selected>--Select Parent Category--</option>
-              <option value="US">Men'S</option>
-              <option value="CA">Women's</option>
-              <option value="CA">Sale</option>
+              <option value="Men">--Select Parent Category--</option>
+              <option value="Men">Men'S</option>
+              <option value="Women">Women's</option>
+              <option value="Sale">Sale</option>
             </select>
-            <h1 className="pb-[20px] font-semibold mt-4 ">Select Sub Category</h1>
+            <h1 className="pb-[20px] font-semibold mt-4 ">
+              Select Sub Category
+            </h1>
             <select
               id="countries"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             >
-              <option selected>--Select Sub Category--</option>
-              <option value="US">T-Shirt</option>
-              <option value="CA">Shirt</option>
+              <option value="TShirt">--Select Sub Category--</option>
+              <option value="TShirt">T-Shirt</option>
+              <option value="Shirt">Shirt</option>
             </select>
             <div className="grid grid-cols-2 items-center justify-between gap-6 py-5">
               <div>
                 <h1 className="pb-[20px] font-semibold ">Size</h1>
                 <select
-              id="countries"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            >
-              <option selected>--Select Size--</option>
-              <option value="US">S</option>
-              <option value="CA">M</option>
-              <option value="CA">L</option>
-              <option value="CA">XL</option>
-              <option value="CA">XXL</option>
-            </select>
+                  id="countries"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                >
+                  <option value="S">--Select Size--</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
               </div>
               <div>
                 <h1 className="pb-[20px] font-semibold ">Color</h1>
                 <select
-              id="countries"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            >
-              <option selected>--Select Color--</option>
-              <option value="US">Black</option>
-              <option value="CA">Red</option>
-              <option value="CA">Green</option>
-            </select>
+                  id="countries"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                >
+                  <option value="Black">--Select Color--</option>
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
               </div>
             </div>
             <div className="flex items-center gap-10 mt-4">
